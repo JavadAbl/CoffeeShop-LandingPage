@@ -1,0 +1,85 @@
+//@import "node_modules/bootstrap/scss/_functions";
+//@import "node_modules/bootstrap/scss/_variables";
+//@import "node_modules/bootstrap/scss/_variables-dark";
+
+$primary: #6f4e37; // Coffee brown
+$secondary: #3e2723; // Dark mocha
+$success: #8bc34a; // Matcha green
+$info: #d7ccc8; // Cream
+$warning: #ffa726; // Amber (caramel)
+$danger: #c62828; // Deep red
+$accent: #ffeb3b; // Bright yellow (adds a pop of energy)
+$highlight: #ff5722; // Rich orange
+$light: #fefefe; // Light cream
+$dark: #3b2e2e; // Deep chocolate brown
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "highlight": $highlight,
+  "accent": $accent,
+) !default;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+) !default;
+
+$navbar-padding-y: 0.75rem;
+$navbar-dark-color: snow;
+$navbar-dark-hover-color: $primary;
+$navbar-dark-brand-color: $primary;
+$navbar-dark-brand-hover-color: $primary;
+
+$btn-radius: 50px;
+$_btn-padding-y: 0.2rem;
+$_btn-padding-x: 1.25rem;
+
+$btn-border-radius: $btn-radius;
+$btn-border-radius-sm: $btn-radius;
+$btn-border-radius-lg: $btn-radius;
+$btn-padding-x: $_btn-padding-x;
+$btn-padding-x-sm: $_btn-padding-x;
+$btn-padding-x-lg: $_btn-padding-x;
+$btn-padding-y: $_btn-padding-y;
+$btn-padding-y-sm: $_btn-padding-y;
+$btn-padding-y-lg: $_btn-padding-y;
+
+.navbar button:hover {
+  color: $light;
+}
+
+hr {
+  border-color: $info !important;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@media (max-width: #{map-get($grid-breakpoints, 'md')}) {
+  .navbar {
+    background-color: #343a40 !important; // Set to Bootstrap's dark color or any color you prefer
+  }
+}
+
+.justify {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  word-break: break-all;
+}
