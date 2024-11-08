@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className=" navbar navbar-expand-md fixed-top navbar-dark ">
+    <nav data-bs-theme="dark" className=" navbar navbar-expand-md fixed-top  ">
       <div className=" container-lg">
         <div className=" navbar-brand">
           <a href="#">
