@@ -1,8 +1,29 @@
+import { useEffect } from "react";
 import styles from "./MainCarousel.module.css";
+import { neonify } from "neontext";
+import Neonizer from "neonizer";
+import useColorize from "../../Hooks/UseColorize";
 
 export default function MainCarousel() {
+  const color = useColorize(2000);
+  /* useEffect(() => {
+    neonify({
+      elem: "arrowCarousel",
+      shadowBlurRadius: 5,
+      colors: [
+        "rgb(150, 151, 255)",
+        "rgb(150, 255, 151)",
+        "rgb(255, 151, 151)",
+      ],
+      random: true,
+      colorizeText: true,
+      shadowOffsetX: 2,
+      shadowOffsetY: 2,
+    });
+  }, []); */
+
   return (
-    <div className=" container-lg">
+    <div className=" container-lg mb-8">
       <div id="mainCarousel" className=" carousel carousel-fade ">
         <div className="carousel-indicators">
           <button
@@ -123,6 +144,15 @@ export default function MainCarousel() {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
+      </div>
+
+      <div className="text-center d-block mt-3 ">
+        <a href="#CoffeeLines">
+          <i
+            style={{ color }}
+            className={"bi bi-box-arrow-down h3 " + styles.test}
+          ></i>
+        </a>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import CoffeeLines from "../Component/CoffeeLines/CoffeeLines";
 import Header from "../Component/Header/Header";
 import MainCarousel from "../Component/MainCarousel/MainCarousel";
 import Navbar from "../Component/Navbar/Navbar";
@@ -10,6 +11,7 @@ export default function Home() {
         <Navbar />
         <Header />
         <MainCarousel />
+        <CoffeeLines />
       </div>
     </>
   );

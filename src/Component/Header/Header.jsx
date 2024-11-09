@@ -23,7 +23,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className={" container-lg py-6 text-center "}>
+    <div className={" container-lg pt-6 pb-5 text-center "}>
       <h1 className=" display-2 text-light">
         {"Welcome to Our "}
         <Neonizer time={2500}>
