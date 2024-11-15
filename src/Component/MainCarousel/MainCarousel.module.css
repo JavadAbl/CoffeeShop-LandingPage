@@ -1,3 +1,36 @@
-.test {
-  transition: all 750ms ease-in-out;
+.container {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("images/bg-2.webp") center / cover no-repeat fixed;
+
+  height: 100vh;
+}
+
+.title {
+  -webkit-text-stroke: 4px rgba(255, 255, 255, 0.35);
+}
+
+.imgLeft {
+  position: absolute;
+  left: 0.1rem;
+  top: 0.5rem;
+  width: 15%;
+  height: 95%;
+  background: transparent url("/images/img-1.webp") top / contain no-repeat;
+  z-index: 0;
+}
+
+.imgRight {
+  position: absolute;
+  right: 0.1rem;
+  top: 0.5rem;
+  width: 15%;
+  height: 95%;
+  background: transparent url("/images/img-2.webp") bottom / contain no-repeat;
+  z-index: 0;
 }

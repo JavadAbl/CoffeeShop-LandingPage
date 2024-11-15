@@ -69,7 +69,7 @@ hr {
 
 @media (max-width: #{map-get($grid-breakpoints, 'md')}) {
   .navbar {
-    background-color: #343a40 !important; // Set to Bootstrap's dark color or any color you prefer
+    background-color: #343a40 !important;
   }
 }
 

@@ -8,9 +8,15 @@ export default function Home() {
   return (
     <>
       <div className={"" + styles.container}>
-        <Navbar />
-        <Header />
-        <MainCarousel />
+        <div style={{ minHeight: "100vh" }} className=" ">
+          <Navbar />
+          <Header />
+        </div>
+
+        <div style={{ minHeight: "100vh" }}>
+          <MainCarousel />
+        </div>
+
         <CoffeeLines />
       </div>
     </>

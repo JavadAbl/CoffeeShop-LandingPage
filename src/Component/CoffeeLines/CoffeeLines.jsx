@@ -2,7 +2,7 @@ import styles from "./CoffeeLines.module.css";
 
 export default function CoffeeLines() {
   return (
-    <div id="CoffeeLines" className=" container-lg">
+    <div className=" container-lg">
       <div className=" text-white">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
         voluptatem perspiciatis possimus, adipisci commodi corrupti id, nisi

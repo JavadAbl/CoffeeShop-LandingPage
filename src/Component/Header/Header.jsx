@@ -2,8 +2,11 @@ import styles from "./Header.module.css";
 import Neonizer from "neonizer";
 import { neonify } from "neontext";
 import { useEffect } from "react";
+import useColorize from "../../Hooks/UseColorize";
 
 export default function Header() {
+  const color = useColorize(2000);
+
   useEffect(() => {
     neonify({
       elem: "container",
@@ -11,9 +14,9 @@ export default function Header() {
       colors: [
         "white",
 
-        /* "rgb(150, 151, 255)",
+        "rgb(150, 151, 255)",
         "rgb(150, 255, 151)",
-        "rgb(255, 151, 151)", */
+        "rgb(255, 151, 151)",
       ],
       random: true,
       colorizeText: false,
@@ -23,8 +26,8 @@ export default function Header() {
   }, []);
 
   return (
-    <div className={" container-lg pt-6 pb-5 text-center "}>
-      <h1 className=" display-2 text-light">
+    <div style={{}} className={"container-lg pt-3 pb-5 text-center "}>
+      <h1 className=" display-4 text-light">
         {"Welcome to Our "}
         <Neonizer time={2500}>
           <p className={" fw-bold text-uppercase "} id="container">
@@ -47,6 +50,15 @@ export default function Header() {
           className={"btn btn-outline-info  ms-1 text-uppercase " + styles.btn}
         >
           Contact Sales
+        </a>
+      </div>
+
+      <div className="text-center d-block mt-4 ">
+        <a href="#CoffeeLines">
+          <i
+            style={{ color }}
+            className={"bi bi-box-arrow-down h3 " + styles.test}
+          ></i>
         </a>
       </div>
     </div>
